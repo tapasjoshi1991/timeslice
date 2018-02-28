@@ -8,6 +8,11 @@ import javax.persistence.Table;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
+/**
+ * 
+ * @author Tapas Ranjan Joshi
+ *
+ */
 @Entity
 @Table(name="events_date")
 public class EventDate {
@@ -22,6 +27,7 @@ public class EventDate {
 	private int year;
 	
 	public long getDateId() {
+		System.out.println("Just for testing");
 		return dateId;
 	}
 	public void setDateId(long dateId) {
